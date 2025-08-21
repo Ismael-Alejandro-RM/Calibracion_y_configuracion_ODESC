@@ -8,7 +8,7 @@ https://docs.odriverobotics.com/v/0.5.6/getting-started.html
 https://docs.odriverobotics.com/v/0.6.9/guides/getting-started.html
 
 ## Calibración de la ODESC
-Ejecute las siguientes instrucciones en orden para una correcta calibración 
+Ejecute en orden las siguientes instrucciones para una calibración correcta
 
 ### 1. Configuración de la batería 
 
