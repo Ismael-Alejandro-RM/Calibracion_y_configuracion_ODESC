@@ -23,12 +23,12 @@ odrv0.config.dc_bus_overvoltage_trip_level = 4.25 * 4
 ```
 #### 1.2. Límites de corriente
 
-1.2.1. Corriente de descarga máxima de la bateria [5A*25C = 125]
+Corriente de descarga máxima de la bateria [5A*25C = 125]
 ```
 odrv0.config.dc_max_positive_current = 125
 ```
 
-1.2.1. Corriente de carga máxima de la bateria [-5*1 = -5]
+Corriente de carga máxima de la bateria [-5*1 = -5]
 ```
 odrv0.config.dc_max_negative_current = -5 
 ```
