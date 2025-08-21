@@ -49,6 +49,36 @@ Constante de torque [8.27/Kv]
 ```
 odrv0.axis0.motor.config.torque_constant = 8.27/39 
 ```
+
+Corriente de calibración para el motor 
+```
+odrv0.axis0.motor.config.calibration_current = 3
+```
+
+Voltaje máximo permitido durante la calibración
+```
+odrv0.axis0.motor.config.resistance_calib_max_voltage = 4 
+```
+
+Corriente de bloqueo para la calibración del encoder
+```
+odrv0.axis0.config.calibration_lockin.current = 0.12
+```
+
+Calibración del motor [axisState.MOTOR_CALIBRATION = 4]
+
+#Al ejecutar el siguiente comando, el motor debe emitir un silbido
+```
+odrv0.axis0.requested_state = 4 
+```
+Guardar la configuración establecida
+```
+odrv0.save_configuration() 
+```
+
+
+
+
 ```
 
 ```
