@@ -39,7 +39,7 @@ odrv0.config.dc_max_negative_current = -5
 
 ### 2. Configuración del motor
 
-2.1. Tipo de motor [MotorType.HIGH_CURRENT = 0]
+2.1. Tipo de motor [MOTOR_TYPE_HIGH_CURRENT = 0]
 ```
 odrv0.axis0.motor.config.motor_type = 0
 ```
