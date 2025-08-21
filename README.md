@@ -11,6 +11,20 @@ Ejecute las siguientes instrucciones en orden para una correcta calibración
 
 ### Configuración de la batería 
 
-Información de la Bateria [Lipo 4S, 5000 mA, 25~35C] 
-Número de celdas en serie = 4
+Información de la Bateria [Lipo 4S, 14.8V 5000 mA, 25C] 
+
+Límites de voltaje
+
+```
+odrv0.config.dc_bus_undervoltage_trip_level = 3.3 * 4
+```
+```
+odrv0.config.dc_bus_overvoltage_trip_level = 4.25 * 4
+```
+
+```
+
+```
+
+
 
