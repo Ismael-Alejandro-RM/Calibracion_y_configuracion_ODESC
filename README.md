@@ -12,7 +12,7 @@ Ejecute las siguientes instrucciones en orden para una correcta calibración
 
 ### Configuración de la batería 
 
-Información de la Bateria [Lipo 4S, 14.8V 5000 mA, 25C] 
+> Información de la Bateria [Lipo 4S, 14.8V 5000 mA, 25C] 
 
 #### Límites de voltaje
 
