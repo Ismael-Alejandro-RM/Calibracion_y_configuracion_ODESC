@@ -3,9 +3,13 @@
 ODESC V4.2 (Firmware 0.5.6) 
 
 ### Referencias
+
+#### versión de la ODrive 3.6 (ODESC V4.2)
 https://docs.odriverobotics.com/v/0.5.6/getting-started.html
 
-https://docs.odriverobotics.com/v/0.6.9/guides/getting-started.html
+#### Documentación mas reciente de la Odrive Original
+https://docs.odriverobotics.com/v/latest/guides/odrivetool-setup.html
+
 
 ## Calibración de la ODESC
 Ejecute en orden las siguientes instrucciones para una calibración correcta
