@@ -66,7 +66,8 @@ odrv0.axis0.config.calibration_lockin.current = 0.12
 ```
 
 Calibración del motor [axisState.MOTOR_CALIBRATION = 4]
-#Al ejecutar el siguiente comando, el motor debe emitir un silbido
+
+Al ejecutar el siguiente comando, el motor debe emitir un silbido
 ```
 odrv0.axis0.requested_state = 4 
 ```
@@ -75,12 +76,82 @@ Guardar la configuración establecida
 odrv0.save_configuration() 
 ```
 
+### Configuración de los límites del motor 
 
-
-
+Limite de corriente (A)
+```
+odrv0.axis0.motor.config.current_lim = 5
 ```
 
+Limite de velocidad (vueltas/s)
 ```
+odrv0.axis0.controller.config.vel_limit = 7
+```
+
+### Configuración del encoder del motor
+
+Tipo de encoder
+```
+odrv0.axis0.encoder.config.mode = ENCODER_MODE_HALL
+```
+
+Pulsos por revolución
+```
+odrv0.axis0.encoder.config.cpr = 90
+```
+Ancho de banda (reducido para motores hoverboard)
+```
+odrv0.axis0.encoder.config.bandwidth = 100 
+```
+Offset de calibración (aumentada debido a la baja resolución)
+```
+odrv0.axis0.encoder.config.calib_scan_distance = 150
+```
+
+Ejecutar el siguiente comando hasta que el CPR = 1
+```
+odrv0.axis0.encoder.count_in_cpr 
+```
+
+Primera secuencia de calibración del encoder
+Al ejecutar el comando, el motor deberá girar en levógiro 
+```
+odrv0.axis0.requested_state = AXIS_STATE_FULL_CALIBRATION_SEQUENCE
+```
+
+Guardar la configuración establecida
+```
+odrv0.save_configuration() 
+```
+
+Resetear el ODESC
+```
+odrv0.reboot()
+```
+
+Ejecutar el siguiente comando hasta que el CPR = 0
+```
+odrv0.axis0.encoder.count_in_cpr 
+```
+
+Segunda secuencia de calibración del encoder
+Al ejecutar el comando, el motor deberá girar en levógiro y dextrógiro 
+```
+odrv0.axis0.requested_state = AXIS_STATE_FULL_CALIBRATION_SEQUENCE
+```
+
+Activar el control en lazo cerrado
+```
+odrv0.axis0.config.startup_closed_loop_control = True
+```
+
+#Activar la calibración del motor
+
+
+
+
+
+
 
 
 
