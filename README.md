@@ -43,7 +43,7 @@ odrv0.config.dc_max_negative_current = -5
 ```
 odrv0.axis0.motor.config.motor_type = 0
 ```
-2.2. Número de electroimanes
+2.2. Número de electroimanes dividido entre 2 
 ```
 odrv0.axis0.motor.config.pole_pairs = 15
 ```
@@ -53,12 +53,12 @@ odrv0.axis0.motor.config.pole_pairs = 15
 odrv0.axis0.motor.config.torque_constant = 8.27/39 
 ```
 
-2.4. Corriente de calibración para el motor 
+2.4. Corriente usada durante la calibración del motor 
 ```
 odrv0.axis0.motor.config.calibration_current = 3
 ```
 
-2.5. Voltaje máximo permitido durante la calibración
+2.5. Voltaje máximo  durante la calibración del motor
 ```
 odrv0.axis0.motor.config.resistance_calib_max_voltage = 4 
 ```
