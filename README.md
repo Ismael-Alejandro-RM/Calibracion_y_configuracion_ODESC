@@ -1,4 +1,4 @@
-# Calibracion y configuracion de los controladores ODESC
+# Calibración y configuración de los controladores ODESC
 
 ODESC V4.2 (Firmware 0.5.6) 
 
