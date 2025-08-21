@@ -66,7 +66,7 @@ odrv0.axis0.config.calibration_lockin.current = 0.12
 
 2.7. Calibración del motor [axisState.MOTOR_CALIBRATION = 4]
 > [!IMPORTANT]
-> Al ejecutar el siguiente comando, el motor debe emitir un silbido
+> Al ejecutar el siguiente comando, el motor debe emitir un sonido
 ```
 odrv0.axis0.requested_state = 4 
 ```
@@ -149,7 +149,7 @@ odrv0.axis0.config.startup_closed_loop_control = True
 
 4.12. Activar la calibración del motor
 > [!IMPORTANT]
-> Al ejecutar el siguiente comando, el motor debe emitir un silbido
+> Al ejecutar el siguiente comando, el motor debe emitir un sonido
 ```
 odrv0.axis0.requested_state = AXIS_STATE_MOTOR_CALIBRATION
 ```
