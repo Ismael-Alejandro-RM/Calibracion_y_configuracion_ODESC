@@ -4,6 +4,7 @@ ODESC V4.2 (Firmware 0.5.6)
 
 ### Referencias
 https://docs.odriverobotics.com/v/0.5.6/getting-started.html
+
 https://docs.odriverobotics.com/v/0.6.9/guides/getting-started.html
 
 ## Calibración de la ODESC
@@ -145,12 +146,41 @@ Activar el control en lazo cerrado
 odrv0.axis0.config.startup_closed_loop_control = True
 ```
 
-#Activar la calibración del motor
+Activar la calibración del motor
+```
+odrv0.axis0.requested_state = AXIS_STATE_MOTOR_CALIBRATION
+```
 
+Guardar la configuración de precalibración del motor
+```
+odrv0.axis0.motor.config.pre_calibrated = True
+```
 
+Offset de calibración del encoder
+Al ejecutar el comando, el motor deberá girar en levógiro y dextrógiro 
+```
+odrv0.axis0.requested_state = AXIS_STATE_ENCODER_OFFSET_CALIBRATION
+```
 
+Guardar la configuración de precalibración del encoder
+```
+odrv0.axis0.encoder.config.pre_calibrated = True
+```
 
+Habilitar el control en lazo cerrado
+```
+odrv0.axis0.requested_state = AXIS_STATE_CLOSED_LOOP_CONTROL
+```
 
+Guardar la configuración establecida
+```
+odrv0.save_configuration() 
+```
+
+Resetear el ODESC
+```
+odrv0.reboot()
+```
 
 
 
