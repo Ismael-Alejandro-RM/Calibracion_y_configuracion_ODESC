@@ -58,12 +58,12 @@ odrv0.axis0.motor.config.torque_constant = 8.27/39
 odrv0.axis0.motor.config.calibration_current = 3
 ```
 
-2.5. Voltaje máximo  durante la calibración del motor
+2.5. Voltaje máximo permitido durante la calibración del motor
 ```
 odrv0.axis0.motor.config.resistance_calib_max_voltage = 4 
 ```
 
-2.6. Corriente de bloqueo para la calibración del encoder
+2.6. Corriente de bloqueo durante la calibración del encoder
 ```
 odrv0.axis0.config.calibration_lockin.current = 0.12
 ```
