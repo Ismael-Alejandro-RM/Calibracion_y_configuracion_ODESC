@@ -1,4 +1,4 @@
-# Calibración y configuración de los controladores ODESC
+# Calibración y comandos de los controladores ODESC
 
 ODESC V4.2 (Firmware 0.5.6) 
 
@@ -190,6 +190,22 @@ odrv0.save_configuration()
 odrv0.reboot()
 ```
 
+## Comandos para correr el nodo en ROS 2
+
+Ejecutar el nodo "odrive" con argumentos (--ros-args -p my_param:= establecer un parámetro)
+```
+ros2 run ros_odrive odrive --ros-args -p od_sn:='"0x3570375A3033"'
+```
+
+Comando para publicar una consigna de velocidad al nodo "Odrive"
+```
+ros2 topic pub /odrive_ctrl_0x3570375A3033 ros_odrive_msgs/msg/Odrvctrl "{target: 0, command: 3, axis: 0, fval: 0.0, fval2: 0.0}"
+```
+
+Comando para leer datos del nodo "Odrive"
+```
+ros2 topic echo /odrive_msg_0x3570375A3033
+```
 
 
 
